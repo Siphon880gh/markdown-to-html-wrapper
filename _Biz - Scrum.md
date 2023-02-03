@@ -13,7 +13,7 @@
 ```
 
 ## Envisioning
-From the vision, you create a backlog and Product roadmap.
+From the vision, you create a Backlog and Product Roadmap.
 - Product Backlog
 - Product Roadmap
 
@@ -22,7 +22,7 @@ From the vision, you create a backlog and Product roadmap.
 
 
 ### Product roadmap
-It's a quick multilane table of different aspects of the product's existence - market, feature, tech architecture, release schedule
+It's a quick multi-lane table of different aspects of the product's existence - market, feature, tech architecture, release schedule
 
 ![](https://i.imgur.com/DRa2cnz.jpg)
 
@@ -35,43 +35,43 @@ You can take from the roadmap and create the backlog
 
 ![](https://i.imgur.com/pF4lNmv.jpg)
 
-Those backlog items are a mix of features, bug fixes, technical improvements (may be user experienced like improved performance, or may lead to better developer productivity like refactored code, or may eliminate technical debt that becoems apparent later), and knowledge acquisition (Split A/B Testing)
+Those backlog items are a mix of features, bug fixes, technical improvements (may be user-experienced like improved performance, or may lead to better developer productivity like refactored code, or may eliminate technical debt that becomes disastrous later), and knowledge acquisition (Split A/B Testing)
 ![](https://i.imgur.com/engwHCN.jpg)
 
 ![](https://i.imgur.com/mt6djmx.jpg)
 
 ### Organizing the backlog
 
-Think of the backlog as stacks from top to bottom. The top stacks are the ones you're going to pop off first in your team. You will have multiple releases down teh stack. So you have to consider what's important to users on Release 1, and the least important are at the bottom of the stack:
+Think of the backlog as stacks from top to bottom. The top stacks are the ones you're popping off first in your team. You will have multiple releases down the stack. So you have to consider what's important to users on Release 1, and the least important are stashed away at the bottom:
 
 ![](https://i.imgur.com/vvPLU0X.jpg)
 
-It will be wasteful timing to figure out the sizing of much later events so you can just estimate and categorize by L, XL, etc, rather than concrete numbers. You may learn that your assumptions about what the market demands may be wrong and end up discarding much of the later work, so don't waste your time planning too far into the future:
+It will waste time to figure out sizing of much later events. Instead of breaking them down to concrete numbers, just estimate the much later events qualitatively as L, XL, etc. You might learn you were mistakened about your assumptions of the market demands and have to discard much of the later plans, so don't waste time planning too far into the future:
 
 ![](https://i.imgur.com/5rzkAq5.jpg)
 
-> Here's one way to broadly  categorize L, XL, etc - by estimated costs
+> Here's one way to broadly categorize L, XL, etc - by estimating costs
   ![](https://i.imgur.com/3zQrapm.png)
 
 
-You can figure out what features are important and higher priority to users to place on the product backlog by gathering stories:
+From gathering and writing stories, you can figure out what features are important and of higher priority to users. Place the least important at the bottom of the Backlog.
 ![](https://i.imgur.com/4UoE5lE.jpg)
 
-To further hone in the fact that valued features should be delivered in earlier releases:
+To further hone in the fact that user-valued features should be delivered in earlier releases:
 
 ![](https://i.imgur.com/MxZzYvV.jpg)
 
 ### Keeping the backlog accurate over time (Grooming)
 
-You may want to update the backlog as you learn more about the market over time, possibly at the end of each sprint. Here's an example of reprioritizing items on the backlog - aka Grooming. But keep in mind you may have to restructure the sprints to fit the right man hours and team capacity:
+You should update the backlog as you learn more about the market over time, possibly at the end of each sprint. Here's an example of reprioritizing items on the backlog - aka Grooming. Keep in mind you should also restructure the sprints to fit the right man hours and team capacity:
 
 ![](https://i.imgur.com/jc19wup.jpg)
 
-Keep in mind you may have to scope the sprints differently to fit the times, budget, avoid burnout, etc. Will cover sprint planning later. 
+Also note - you may have to scope the sprints differently to fit the times, budget, avoid burnout, etc. Will cover sprint planning later. 
 
 ### Keeping the product portfolio accurate over time
 
-If your company has multiple products, you don't want to thin out your developers working on the same products multiple times. You don't want products/features that are irrelevant sinking your budget. As you learn more about the market, you may have to sunset some features/products, and introduce others into your portfolio of products. Make sure the in-flow and out-flow are balanced so you don't unreasonably add too much or take away too much.
+If your company has multiple products, you don't want to overwork your developers on simultaneous products to the point of producing lower quality work... and you don't want products/features that are irrelevant and sinking your budget. As you learn more about the market, you may have to sunset some features/products, and introduce others into your portfolio of products. These are called in-flow and out-flow of products to your portfolio. Make sure the in-flow and out-flow are balanced so you don't unreasonably add too much or take away too much.
 
 ![](https://i.imgur.com/zn5BOr9.jpg)
 
@@ -84,15 +84,15 @@ If your company has multiple products, you don't want to thin out your developer
 ![](https://i.imgur.com/Z2loE3d.jpg)
 
 
-When we first envision the product (read page's paragraph):
+For when we first envision the product - Read page's paragraph:
 
 ![](https://i.imgur.com/cLpe7Ok.jpg)
 
 
 #### Daily Scrum
-You have daily SCRUM meetings to see what process is working, what features are taking longer than expected, and who needs help.
+Have daily SCRUM meetings to see what process is working, what features are taking longer than expected, and who needs help.
 
-When some feature is very behind, you can have multiple people work on it to clear it off before resuming their own tasks. Daily meetings make this possible. Consider breadth vs depth:
+When a feature is very behind, you can have multiple people work on it to clear it off before resuming their own tasks. Daily meetings make this possible. Consider breadth vs depth:
 
 #### Swarm and concurrent tasks
 
@@ -104,7 +104,7 @@ The others who can't generalize and help will continue their concurrent tasks wi
 
 #### End of each sprint
 
-Have a meeting end of each sprint to review what process worked, and how the features are coming (any assumptions challenged)? Do we need to readjust the sprint and backlogs?
+Have a meeting at the end of every sprint to review what process worked, and how the features are coming (any assumptions challenged)? Do we need to readjust the sprint and backlogs?
 
 #### End of each release
 
@@ -122,7 +122,9 @@ Each sprint can be 1 week or 2 weeks. You can base on points.  Fit the times, bu
 
 ![](https://i.imgur.com/HKc40Ti.jpg)
 
-You are going to cluster the backlog product items BPI's into sprints. A sprint can be 1 week or 2 weeks, and you'r'e going to determine how many sprints before a release:
+^ You are going to cluster the backlog product items BPI's into sprints. So you have Sprint backlogs. 
+
+A sprint can be 1 week or 2 weeks, and you'r'e going to determine how many sprints before a release:
 
 ![](https://i.imgur.com/uvGad9Y.jpg)
 
@@ -167,7 +169,7 @@ You should also plan your backlog around what needs to be out sooner and what co
 
 ### Misc - In the economics of SCRUM
 
-The importance of early releases and the fail fast approach so we can learn if our assumption about the market need is correct and we can pivot earlier than later. You give incremental funding so you don't drain the budget on an unneeded batch of requirements.
+Here we see the importance of early releases and the fail fast approach so we can learn if our assumption about the market need is correct and we can pivot earlier rather than later. Give incremental funding so you don't drain the budget on an unneeded batch of requirements.
 
 ![](https://i.imgur.com/cb6PtCO.jpg)
 
