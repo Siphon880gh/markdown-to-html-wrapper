@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        img {
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            img {
+                width: 50%;
+            }
+        }
+        
+        #toc-toggler {
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+            right: 20px;
+        }
+        
+        #toc {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 0;
+            background-color: white;
+        }
+        
+        #toc-toggler:hover #toc {
+            display: block;
+        }
+        
+        #mobile-workaround.active+#toc {
+            display: block;
+        }
+        
+        .h2 {
+            margin-left: 2ch;
+        }
+        
+        .h2::before {
+            content: "•\00a0";
+        }
+        
+        .h3 {
+            margin-left: 4ch;
+        }
+        
+        .h3::before {
+            content: "—";
+        }
+        
+        .h4 {
+            margin-left: 6ch;
+        }
+        
+        .h4::before {
+            content: "➣";
+        }
+        
+        .h5 {
+            margin-left: 8ch;
+        }
+        
+        .h5::before {
+            content: "➨";
+        }
+        
+        .h6 {
+            margin-left: 10ch;
+        }
+        
+        .h6::before {
+            content: "◦\00a0";
+        }
+    </style>
+</head>
+
+<body onclick="console.log(event.target); if(!event.target.matches('#mobile-workaround')) { document.querySelector('#mobile-workaround').classList.remove('active') }">
+    <div id="toc-toggler">
+        <div id="mobile-workaround" onclick="event.target.classList.toggle('active')">📖</div>
+        <div id="toc"></div>
+    </div>
+    <div class="container"></div>
+
+    <script>
+        function htmlTableOfContents(elNode) {
+            var toc = document.getElementById("toc");
+            var headings = [].slice.call(elNode.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+
+            headings.forEach(function(heading, i) {
+                var ref = "toc" + i;
+                if (heading.hasAttribute("id"))
+                    ref = heading.getAttribute("id");
+                else
+                    heading.setAttribute("id", ref);
+
+                var link = document.createElement("a");
+                link.setAttribute("href", "#" + ref);
+                link.textContent = heading.textContent;
+
+                var div = document.createElement("div");
+                div.classList.add(heading.tagName.toLowerCase());
+                div.appendChild(link);
+                toc.appendChild(div);
+            });
+        }
+    </script>
+    <script>
+        fetch("_Biz - Scrum.md").then(response => response.text()).then(myMarkdown => {
+            var md = window.markdownit();
+            var result = md.render(myMarkdown);
+            document.querySelector(".container").innerHTML = result;
+            htmlTableOfContents(document.querySelector(".container"))
+        })
+    </script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js
+    "></script>
+</body>
+
+</html>
