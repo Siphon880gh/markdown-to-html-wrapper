@@ -36,7 +36,7 @@
             display: block;
         }
         
-        #mobile-workaround.active+#toc {
+        #mobile-tap.active+#toc {
             display: block;
         }
         
@@ -82,9 +82,9 @@
     </style>
 </head>
 
-<body onclick="console.log(event.target); if(!event.target.matches('#mobile-workaround')) { document.querySelector('#mobile-workaround').classList.remove('active') }">
+<body onclick="console.log(event.target); if(!event.target.matches('#mobile-tap')) { document.querySelector('#mobile-tap').classList.remove('active'); }">
     <div id="toc-toggler">
-        <div id="mobile-workaround" onclick="event.target.classList.toggle('active')">📖</div>
+        <div id="mobile-tap" onclick="event.target.classList.toggle('active')">📖</div>
         <div id="toc"></div>
     </div>
     <div class="container"></div>
@@ -107,6 +107,9 @@
 
                 var div = document.createElement("div");
                 div.classList.add(heading.tagName.toLowerCase());
+                link.addEventListener("click", (event) => {
+                    document.querySelector('#mobile-tap').classList.remove('active')
+                })
                 div.appendChild(link);
                 toc.appendChild(div);
             });
