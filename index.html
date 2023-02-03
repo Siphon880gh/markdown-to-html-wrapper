@@ -82,7 +82,7 @@
     </style>
 </head>
 
-<body onclick="console.log(event.target); if(!event.target.matches('#mobile-tap')) { document.querySelector('#mobile-tap').classList.remove('active'); }">
+<body onclick="if(!event.target.matches('#mobile-tap')) { document.querySelector('#mobile-tap').classList.remove('active'); }">
     <div id="toc-toggler">
         <div id="mobile-tap" onclick="event.target.classList.toggle('active')">📖</div>
         <div id="toc"></div>
@@ -114,8 +114,6 @@
                 toc.appendChild(div);
             });
         }
-    </script>
-    <script>
         fetch("_Biz - Scrum.md", {
                 cache: "no-cache"
             }).then(response => response.text())
